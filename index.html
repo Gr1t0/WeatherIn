@@ -5,25 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>WeatherIn</title>
   </head>
   <body>
     <h1>Weather In</h1>
     <div class="container">
-      <form class="search-class">
-        <input
-          type="search"
-          placeholder="Enter city 🔍"
-          autocomplete="off"
-          autofocus="on"
-          id="searchCity"
-        />
+      <div class="box-1">
+        <form class="search-class">
+          <input
+            type="search"
+            placeholder="Enter city"
+            autocomplete="off"
+            autofocus="on"
+            id="searchCity"
+          />
+        </form>
 
-        <input type="submit" value="Search" />
-      </form>
+        <div class="city">Utrecht</div>
+      </div>
       <div class="time&date">
-        <h2 class="city">Utrecht</h2>
+        <h2 class="date">2/2/2022</h2>
         <h2 class="time">10:01</h2>
       </div>
       <div class="deg&num">
@@ -66,8 +68,10 @@
           <td>💧50%</td>
         </tr>
       </table>
+      <p class="link">
+        <a href="https://github.">Open-source code </a>by Gr1t0
+      </p>
+      <script src="src/app.js"></script>
     </div>
-    <p class="link"><a href="https://github.">Open-source code </a>by Gr1t0</p>
-    <script src="src/app.js"></script>
   </body>
 </html>
