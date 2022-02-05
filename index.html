@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap"
+      rel="stylesheet"
+    />
+
     <title>WeatherIn</title>
   </head>
   <body>
@@ -20,7 +27,7 @@
           class="search-class"
           autocomplete="off"
         />
-        <input type="submit" value="🌡" id="submit" class="search-class" />
+        <input type="submit" value="Search" id="submit" class="search-class" />
       </form>
 
       <p id="date"></p>
@@ -39,7 +46,7 @@
         <p class="hum">Humidity: <span id="humudity"></span>%,</p>
         <p class="windy">Wind: <span id="wind"></span> km/h</p>
       </div>
-      <img src="#" id="icon" class="icon-image" />
+      <img src="images/pixel.gif" id="icon" class="icon-image" />
 
       <script src="src/app.js"></script>
     </div>
