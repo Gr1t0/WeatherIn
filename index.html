@@ -10,14 +10,17 @@
   </head>
   <body>
     <div class="container">
-      <form class="search-class">
+      <form id="searchCity">
         <input
           type="search"
           placeholder="Enter city"
           autocomplete="off"
           autofocus="on"
-          id="searchCity"
+          id="city-input"
+          class="search-class"
+          autocomplete="off"
         />
+        <input type="submit" value="🌡" id="submit" class="search-class" />
       </form>
 
       <p id="date"></p>
@@ -27,13 +30,13 @@
       <div class="deg-num">
         <p id="temperature"></p>
         <p class="deg">°C|°F</p>
-        <p class="hum">Humudity: <span id="humudity"></span>%,</p>
+        <p class="hum">Humidity: <span id="humudity"></span>%,</p>
         <p class="windy">Wind: <span id="wind"></span> km/h</p>
       </div>
-      <img src="" id="icon" class="icon-image" />
+      <img src="#" id="icon" class="icon-image" />
 
       <script src="src/app.js"></script>
     </div>
-    <p class="link"><a href="https://github.">Open-source code </a>by Gr1t0</p>
+    <p class="link"><a href="https://github.">Open-source code </a>by Gr1</p>
   </body>
 </html>

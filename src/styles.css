@@ -18,17 +18,21 @@ table {
 }
 
 .search-class {
-  color: #607d8b;
-  margin-left: 20px;
-  font-size: 24px;
-}
-
-#searchCity {
   border: none;
   outline: none;
   font-size: 12px;
   background-color: #c5cae9;
   font-family: monospace;
+}
+
+#searchCity {
+  color: #607d8b;
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+#submit {
+  font-size: 20px;
 }
 
 #date {
@@ -74,7 +78,7 @@ table {
   margin: 5px 0px 5px 0px;
   color: black;
   display: inline;
-  font-weight: 550;
+  font-weight: 300;
 }
 
 .icon-image {

@@ -43,7 +43,22 @@ function displayTemperature(response) {
 }
 
 let apiKey = `f1396ff9da501a83ff2b7fb3c4589098`;
-let cityName = `Amsterdam`;
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
-axios.get(apiUrl).then(displayTemperature);
+function search(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector(`#city-input`);
+  let cityName = cityInputElement.value;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+let form = document.querySelector(`#searchCity`);
+form.addEventListener("keypress", function (event) {
+  var key = event.which || event.keyCode || 0;
+
+  if (key === 13) {
+    search(event);
+  }
+});
+form.addEventListener("submit", search);
