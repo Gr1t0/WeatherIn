@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>WeatherIn</title>
   </head>
@@ -21,14 +21,14 @@
       </form>
       <h2 class="time">10:01</h2>
       <p class="date">02/Feb/2022</p>
-      <p class="city">Utrecht</p>
-      <p class="cond">Clear</p>
+      <p id="city"></p>
+      <p id="description"></p>
 
       <div class="deg-num">
-        <p class="num">5</p>
+        <p id="temperature"></p>
         <p class="deg">°C|°F</p>
-        <p class="hum">Humidity30%,</p>
-        <p class="wind">Wind:2.36km/h</p>
+        <p class="hum">Humudity: <span id="humudity"></span>%,</p>
+        <p class="windy">Wind: <span id="wind"></span> km/h</p>
       </div>
       <p class="icon">⛅</p>
 

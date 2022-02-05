@@ -35,7 +35,7 @@ table {
   color: #303f9f;
   font-size: 12px;
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: 50px;
   margin: 0;
 }
@@ -43,23 +43,24 @@ table {
   color: #303f9f;
   font-size: 12px;
   position: absolute;
-  top: 40px;
+  top: 45px;
   right: 30px;
   margin: 0;
 }
 
-.city {
-  color: #303f9f;
+#city {
+  color: #000000;
   font-size: 24px;
   text-align: center;
-  margin: 15px 0px 5px 0px;
+  margin: 15px 0px 3px 0px;
 }
 
-.cond {
+#description {
   color: #303f9f;
-  font-size: 14px;
+  font-size: 10px;
   text-align: center;
-  margin: 5px 0px 15px 0px;
+  margin: 1px 0px 15px 0px;
+  text-transform: capitalize;
 }
 
 .deg-num {
@@ -67,12 +68,13 @@ table {
   margin: 0px 0px 0px 30px;
 }
 
-.num {
+#temperature {
   font-size: 52px;
   margin: 0 auto;
   color: #ffffff;
   display: inline;
   padding: 0;
+  font-weight: 700;
 }
 
 .deg {
@@ -96,10 +98,11 @@ table {
   color: #303f9f;
 }
 
-.wind {
+.windy {
   font-size: 16px;
   margin: 5px 0px 5px 0px;
   color: #303f9f;
+  text-transform: capitalize;
 }
 
 a {
