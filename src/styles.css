@@ -1,7 +1,6 @@
 body {
   margin: 0 auto;
   font-family: monospace;
-  color: #212121;
 }
 .container {
   border: 1px solid #607d8b;
@@ -76,7 +75,6 @@ table {
 .deg {
   font-size: 16px;
   margin: 5px 0px 5px 0px;
-  color: black;
   display: inline;
   font-weight: 300;
 }
@@ -89,13 +87,13 @@ table {
 }
 
 .hum {
-  font-size: 16px;
+  font-size: 12px;
   margin: 5px 0px 5px 0px;
   color: #303f9f;
 }
 
 .windy {
-  font-size: 16px;
+  font-size: 12px;
   margin: 5px 0px 5px 0px;
   color: #303f9f;
   text-transform: capitalize;
@@ -103,10 +101,21 @@ table {
 
 a {
   text-decoration: none;
+  color: #fa6621;
 }
 
 .link {
   margin: 0 auto;
   text-align: center;
   padding: 5px 0px 0px 0px;
+}
+
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+  cursor: default;
 }
