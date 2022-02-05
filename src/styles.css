@@ -31,19 +31,11 @@ table {
   font-family: monospace;
 }
 
-.time {
+#date {
   color: #303f9f;
   font-size: 12px;
   position: absolute;
-  top: 25px;
-  right: 50px;
-  margin: 0;
-}
-.date {
-  color: #303f9f;
-  font-size: 12px;
-  position: absolute;
-  top: 45px;
+  top: 30px;
   right: 30px;
   margin: 0;
 }
