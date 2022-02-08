@@ -16,11 +16,27 @@ function formatDate(timestamp) {
   ];
   let day = days[date.getDay()];
 
-  return `${day} ${hours}:${minutes} `;
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "Decembber",
+  ];
+  let month = months[date.getMonth()];
+  let data = date.getDate();
+
+  return `${data} ${month} ${day}  <br /> ${hours}:${minutes} `;
 }
 
 function displayTemperature(response) {
-  console.log(response.data);
   let temperatureElement = document.querySelector(`#temperature`);
   let cityElement = document.querySelector(`#city`);
   let descriptionElement = document.querySelector(`#description`);
