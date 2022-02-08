@@ -28,7 +28,7 @@ function formatDate(timestamp) {
     "September",
     "October",
     "November",
-    "Decembber",
+    "December",
   ];
   let month = months[date.getMonth()];
   let data = date.getDate();
@@ -36,11 +36,35 @@ function formatDate(timestamp) {
   return `${data} ${month} ${day}  <br /> ${hours}:${minutes} `;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class = "row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML = `${forecastHTML}<div class="row">
+          <div class="col-2">
+            <div class="weather-forecast-date">${day}</div>
+            <img
+              src="https://openweathermap.org/img/wn/50d@2x.png"
+              alt=""
+              width="42"
+            />
+            <div class="weather-forecast-temperatures">
+              <span class="weather-forecast-temperatures-max"> 10 ° </span>
+              <span class="weather-forecast-temperatures-min"> 5 °</span>
+            </div>
+          </div>
+        </div> `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector(`#temperature`);
   let cityElement = document.querySelector(`#city`);
   let descriptionElement = document.querySelector(`#description`);
-  let humidityElement = document.querySelector(`#humudity`);
+  let humidityElement = document.querySelector(`#humidity`);
   let windElement = document.querySelector(`#wind`);
   let dateElement = document.querySelector(`#date`);
   let iconElement = document.querySelector(`#icon`);
@@ -89,6 +113,7 @@ function showCelsiusTemperature(event) {
 }
 
 let celsiusTemperature = null;
+displayForecast();
 
 let form = document.querySelector(`#searchCity`);
 form.addEventListener("keypress", function (event) {

@@ -134,3 +134,11 @@ a {
 .weather-forecast {
   margin: 10px 0px 0px 50px;
 }
+
+.weather-forecast-temperatures-min {
+  opacity: 0.9;
+}
+
+.row {
+  display: inline-block;
+}
