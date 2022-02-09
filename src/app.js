@@ -126,7 +126,6 @@ function search(event) {
     .then(displayTemperature)
     .catch((error) => {
       let cityName = document.querySelector(`#city`);
-      console.log(error);
       cityName.innerHTML = `${cityInputElement.value} Does not exist`;
     });
 }
