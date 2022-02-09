@@ -68,7 +68,7 @@ function displayForecast(response) {
             <div class="weather-forecast-temperatures">
               <span class="weather-forecast-temperatures-max"> ${Math.round(
                 forecastDay.temp.max
-              )}° </span>
+              )}° </span> |
 
               <span class="weather-forecast-temperatures-min"> ${Math.round(
                 forecastDay.temp.min
@@ -121,7 +121,14 @@ function search(event) {
   let cityName = cityInputElement.value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
-  axios.get(apiUrl).then(displayTemperature);
+  axios
+    .get(apiUrl)
+    .then(displayTemperature)
+    .catch((error) => {
+      let cityName = document.querySelector(`#city`);
+      console.log(error);
+      cityName.innerHTML = `${cityInputElement.value} Does not exist`;
+    });
 }
 
 function showFahrenheitTemperature(event) {
