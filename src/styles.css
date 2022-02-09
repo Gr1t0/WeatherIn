@@ -143,5 +143,11 @@ a {
 .col-2 {
   display: inline-block;
   text-align: center;
-  padding: 0 15px 10px 15px;
+  padding: 5px 15px 10px 15px;
+}
+
+.weather-forecast-date {
+  font-weight: 100;
+  font-size: 16px;
+  color: #303f9f;
 }
