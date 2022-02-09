@@ -133,12 +133,15 @@ a {
 
 .weather-forecast {
   margin: 10px 0px 0px 50px;
+  display: inline-block;
 }
 
 .weather-forecast-temperatures-min {
   opacity: 0.9;
 }
 
-.row {
+.col-2 {
   display: inline-block;
+  text-align: center;
+  padding: 0 15px 10px 15px;
 }
