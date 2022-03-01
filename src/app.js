@@ -69,7 +69,6 @@ function displayForecast(response) {
               <span class="weather-forecast-temperatures-max"> ${Math.round(
                 forecastDay.temp.max
               )}° </span> |
-
               <span class="weather-forecast-temperatures-min"> ${Math.round(
                 forecastDay.temp.min
               )} °</span>
@@ -150,6 +149,14 @@ function showCelsiusTemperature(event) {
 let celsiusTemperature = null;
 
 let form = document.querySelector(`#searchCity`);
+form.addEventListener("keypress", function (event) {
+  var key = event.which || event.keyCode || 0;
+
+  if (key === 13) {
+    search(event);
+  }
+});
+form.addEventListener("submit", search);
 
 let fahrenheitLink = document.querySelector("#Fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
