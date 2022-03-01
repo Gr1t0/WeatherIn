@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
   font-family: "DM Mono", monospace;
-  color: #ffffff;
+  color: background-color: #dddad9;
 }
 .container {
   border: 1px solid #607d8b;
